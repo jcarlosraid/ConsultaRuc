@@ -1,0 +1,36 @@
+{
+    "name": "giansalex/peru-consult",
+    "description": "Consulta Perú",
+    "keywords": ["sunat", "reniec"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Giancarlos Salas",
+            "email": "giansalex@gmail.com"
+        }
+    ],
+    "homepage": "https://github.com/giansalex/peru-consult",
+    "type": "library",
+    "require": {
+		"php": ">=5.5.9"
+    },
+    "require-dev": {
+        "phpunit/phpunit": ">=4.8 < 6.0",
+        "behat/behat": "^3.4"
+    },
+	"autoload": {
+        "psr-4": {
+            "Peru\\": "src/Peru/"
+        }
+    },
+    "suggest": {
+        "ext-dom": "Needed to use class Ruc",
+        "ext-gd": "Needed to use class Dni",
+        "ext-openssl": "Needed to connect to Reniec"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    }
+}
